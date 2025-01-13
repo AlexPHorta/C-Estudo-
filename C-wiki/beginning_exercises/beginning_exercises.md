@@ -52,8 +52,12 @@ float pi = 3.14;
     - What is the correct statement? pi2 = pi;
     - What is the reverse? pi = pi2;
     - Is this a valid C statement (even if it gives incorrect results)? Yes, this is a correct statement.
-    - What if you wanted to assign a constant value (like 3.1415) to "pi2"? You can use the const word. Like: const float pi2 = 3.1415;
+    - What if you wanted to assign a constant value (like 3.1415) to "pi2"? You can use the const word.
+    - What would the correct statement look like? const float pi2 = 3.1415;
+    - Would the reverse be a valid or invalid C statement? This would be an invalid C statement.
 
-        a. What would the correct statement look like?
-        b. Would the reverse be a valid or invalid C statement?
+
+## String Manipulation
+
+1. Write a program that prompts the user for a string (pick a maximum length), and prints its reverse. 
 
