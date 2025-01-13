@@ -60,4 +60,26 @@ float pi = 3.14;
 ## String Manipulation
 
 1. Write a program that prompts the user for a string (pick a maximum length), and prints its reverse. 
+```C
+#include <ctype.h>
+#include <stdio.h>
 
+
+int main(void) {
+
+    const int max_length = 10;
+    char palavra[max_length];
+    printf("Digite uma palavra qualquer: ");
+    scanf("%10s", palavra);
+
+    printf("A palavra digitada, invertida, é: ");
+    for (int i = max_length; i >= 0; i--)
+    {
+        if (isalpha(palavra[i]))
+            printf("%c", palavra[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
+```
