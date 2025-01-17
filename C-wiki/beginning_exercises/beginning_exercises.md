@@ -111,3 +111,37 @@ int main(void) {
     return 0;
 }
 ```
+
+## Loops
+
+1. Write a function that outputs a right isosceles triangle of height and width n, so n = 3 would look like:
+```
+*
+**
+***
+```
+
+```C
+#include <stdio.h>
+
+
+void isosceles (int size) {
+
+    char fill_char = '*';
+
+    for (int i=0; i<size; i++)
+    {
+        for (int k=0; k<(i+1); k++)
+            printf("%c", fill_char);
+        printf("\n");
+    }
+}
+
+
+int main (void) {
+
+    isosceles(8);
+
+    return 0;
+}
+```
