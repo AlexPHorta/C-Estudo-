@@ -21,26 +21,19 @@ void D(void) {
 int main(void) {
 
     char a = '.';
-    char prev = 'x';
     int running = 1;
     char ppt[] = "Deseja sair do loop (Digite Q para sair.)? ";
 
     while (running)
     {
         printf("%s", ppt);
-        while (! isalpha(prev))
-            prev = a;
-            scanf("%c", &a);
+        scanf("%c", &a);
         if (a == 'Q')
-        {
-            A();
-            B();
-            C();
-            D();
             break;
-        } else {
-            a = '.';
-        }
+        A();
+        B();
+        C();
+        D();
     }
 
     return 0;
