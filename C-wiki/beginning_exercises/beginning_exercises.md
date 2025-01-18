@@ -221,3 +221,48 @@ int main(void) {
     return 0;
 }
 ```
+
+## Program Flow
+
+1. Build a program where control passes from main to four different functions with 4 calls.
+```C
+#include <stdio.h>
+
+void A(void) {
+    printf("Chamou A\n");
+}
+
+void B(void) {
+    printf("Chamou B\n");
+}
+
+void C(void) {
+    printf("Chamou C\n");
+}
+
+void D(void) {
+    printf("Chamou D\n");
+}
+
+
+int main(void) {
+    A();
+    B();
+    C();
+    D();
+
+    return 0;
+}
+```
+
+2. Now make a while loop in main with the function calls inside it. Ask for input at the beginning of the loop. End the while loop if the user hits Q
+```
+Not ready yet.
+while_in_main.c
+```
+
+3. Next add conditionals to call the functions when the user enters numbers, so 1 goes to function1, 2 goes to function 2, etc.
+
+4. Have function 1 call function a, which calls function b, which calls function c
+
+5. Draw out a diagram of program flow, with arrows to indicate where control goes
