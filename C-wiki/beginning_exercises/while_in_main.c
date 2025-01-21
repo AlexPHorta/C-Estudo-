@@ -20,20 +20,25 @@ void D(void) {
 
 int main(void) {
 
-    char a = '.';
+    char a[1];
     int running = 1;
     char ppt[] = "Deseja sair do loop (Digite Q para sair.)? ";
 
     while (running)
     {
         printf("%s", ppt);
-        scanf("%c", &a);
-        if (a == 'Q')
+        scanf("%1c", a);
+        if (a[0] == 'Q') {
+            running = 0;
             break;
+        }
         A();
         B();
         C();
         D();
+        if (a[0] == '\n')
+            continue;
+        while (getchar() != '\n');
     }
 
     return 0;
