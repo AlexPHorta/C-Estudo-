@@ -486,3 +486,25 @@ float a = raise_to_power(2, 3);    //a gets 8
 float b = raise_to_power(9, 2);    //b gets 81
 float raise_to_power(float f, int power);    //make this your declaration
 ```
+
+```C
+#include <stdio.h>
+
+
+float raise_to_power(float base, int power) {
+    float result = 1;
+    for (int i=0; i<power; i++)
+        result = result * base;
+    return result;
+}
+
+
+int main(void) {
+    printf("%f\n", raise_to_power(2, 3));
+    printf("%f\n", raise_to_power(9, 2));
+    printf("%f\n", raise_to_power(-2, 3));
+
+    return 0;
+}
+```
+
