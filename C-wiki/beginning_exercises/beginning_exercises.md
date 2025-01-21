@@ -508,3 +508,16 @@ int main(void) {
 }
 ```
 
+## Math
+
+1. Write a function to calculate if a number is prime. Return 1 if it is prime and 0 if it is not a prime.
+
+2. Write a function to determine the number of prime numbers below n.
+
+3. Write a function to find the square root by using Newton's method.
+
+4. Write functions to evaluate the trigonometric functions.
+
+5. Try to write a random number generator.
+
+6. Write a function to determine the prime number(s) between 2 and 100. 
