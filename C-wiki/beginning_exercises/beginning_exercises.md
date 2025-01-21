@@ -460,5 +460,29 @@ TBD
 ## Functions
 
 1. Write a function to check if an integer is negative; the declaration should look like bool is_positive(int i);
+```C
+#include <stdbool.h>
+#include <stdio.h>
+
+
+bool is_positive(int a) {
+    if (a > 0)
+        return true;
+    else
+        return false;
+}
+
+
+int main(void) {
+    printf("1: %d\n", (int) is_positive(1));
+    printf("-1: %d\n", (int) is_positive(-1));
+    printf("0: %d\n", (int) is_positive(0));
+}
+```
 
 2. Write a function to raise a floating point number to an integer power, so for example to when you use it
+```
+float a = raise_to_power(2, 3);    //a gets 8
+float b = raise_to_power(9, 2);    //b gets 81
+float raise_to_power(float f, int power);    //make this your declaration
+```
